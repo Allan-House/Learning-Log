@@ -19,7 +19,9 @@ class Entry(models.Model):
     class Meta:
         verbose_name_plural = 'entries'
 
-    # TODO: adds an ellipsis only if the entry is longer than 50 characters.
     def __str__(self):
         """Return a simple string representing the entry."""
-        return f"{self.text[:50]}..."
+        if len(self.text) > 50:
+            return f"{self.text[:50]}..."
+        else:
+            return self.text
