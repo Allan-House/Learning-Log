@@ -24,8 +24,12 @@ Enter the `runserver` command to view the project in its current state. Django s
 python manage.py runserver
 ```
 
-# Building a Page
+# Accounts
 
-1. Specify a URL pattern. (learning_logs/urls.py)
-2. Write a view function. (learning_logs/views.py)
-3. Write a template (learning_logs/templates/learning_logs/*.html).
+**Admin**
+- username: ll_admin
+- password: learning_log
+
+**Basic**
+- username: basic_user
+- password: notasuper
